@@ -1,3 +1,5 @@
+package BinarySearch;
+
 public class findPeakElement{
     public static void main(String[] args) {
         int[] nums = {1,2};
