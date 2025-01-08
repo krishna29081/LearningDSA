@@ -4,7 +4,7 @@ public class noOfTimesArrayRotated {
     public static void main(String[] args) {
         int[] arr = {11,12,15,18,2,5,6,8};
         int indexOfMinEle = findIndexOfMinEle(arr, 0, arr.length - 1);
-        System.out.println(STR."indexOfMinEle = \{arr[indexOfMinEle]}");
+//        System.out.println("indexOfMinEle = {arr[indexOfMinEle]}");
     }
 
     private static int findIndexOfMinEle(int[] arr, int start, int end) {
