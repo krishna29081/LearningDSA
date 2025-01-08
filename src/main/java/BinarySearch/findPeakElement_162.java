@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class findPeakElement{
+public class findPeakElement_162 {
     public static void main(String[] args) {
         int[] nums = {1,2};
         int res = findPeak(nums,0,nums.length-1);
@@ -11,16 +11,6 @@ public class findPeakElement{
     private static int findPeak(int[] nums, int start, int end) {
         if(start<=end) {
             int mid = start + (end - start) / 2;
-            System.out.println("mid = " + mid);
-            if(mid==start) {
-                if(nums[mid]>nums[mid+1]){
-                    return mid;
-                }
-            } else if (mid==end) {
-                if(nums[mid]>nums[mid-1]){
-                    return mid;
-                }
-            }else{
                 if (nums[mid]>nums[mid-1] && nums[mid]> nums[mid+1]){
                     return mid;
                 }
@@ -29,7 +19,6 @@ public class findPeakElement{
                 }
                 return findPeak(nums,start,mid-1);
             }
-        }
         return -1;
     }
 
