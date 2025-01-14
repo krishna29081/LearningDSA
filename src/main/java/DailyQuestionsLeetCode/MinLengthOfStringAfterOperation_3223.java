@@ -12,7 +12,7 @@ public class MinLengthOfStringAfterOperation_3223 {
         int deleted = 0;
         for (Character ch : s.toCharArray()){
             letter[ch - 'a']++;
-            if(ch- 'a' == 3){
+            if(letter[ch- 'a'] == 3){
                 letter[ch - 'a'] -= 2;
                 deleted += 2;
             }
